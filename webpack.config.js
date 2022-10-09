@@ -20,6 +20,10 @@ module.exports = {
         test: /\.(less|css)$/i,
         use: ['style-loader', 'css-loader', 'less-loader']
       },
+      {
+        test: /\.(svg|jpg)$/i,
+        use: 'file-loader',
+      }
     ]
   },
   resolve: {
